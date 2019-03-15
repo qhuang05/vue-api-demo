@@ -1,0 +1,2 @@
+npm install vuex --save
+npm install axios vue-axios --save
