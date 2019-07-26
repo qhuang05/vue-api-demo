@@ -29,37 +29,37 @@
 		  <router-link to="/user" tag="p">用户</router-link>
 		</li>
 	</ul> -->
-	<ul>
-		<router-link to="/" tag="li" exact event="click">
-			<i class="icon">△</i>
-			<span>首页</span>
-		</router-link>
-		<router-link to="/document#abc" tag="li" event="click">
-			<i class="icon">△</i>
-			<span>文档</span>
-		</router-link>
-		<router-link to="/about" tag="li" event="click">
-			<i class="icon">△</i>
-			<span>关于</span>
-		</router-link>
-		<router-link to="/user" tag="li" event="mouseover" active-class="link-active-user">
-			<i class="icon">△</i>
-			<span>用户</span>
-		</router-link>
-	</ul>
-</header>
-<section class="btn-groups">
-	<button @click="forwardHandler">前进</button>
-	<button @click="backHandler">后退</button>
-	<button @click="goHandler">go</button>
-	<button @click="pushHandler">push</button>
-	<button @click="replaceHandler">replace</button>
-</section>
-<transition mode="out-in" :name="pageTransName">
-	<router-view class="body"></router-view>
-</transition>
-<router-view name="slider"></router-view>
-</div>
+		<ul>
+			<router-link to="/" tag="li" exact event="click">
+				<i class="icon">△</i>
+				<span>首页</span>
+			</router-link>
+			<router-link to="/document#abc" tag="li" event="click">
+				<i class="icon">△</i>
+				<span>文档</span>
+			</router-link>
+			<router-link to="/about" tag="li" event="click">
+				<i class="icon">△</i>
+				<span>关于</span>
+			</router-link>
+			<router-link to="/user" tag="li" event="mouseover" active-class="link-active-user">
+				<i class="icon">△</i>
+				<span>用户</span>
+			</router-link>
+		</ul>
+	</header>
+	<section class="btn-groups">
+		<button @click="forwardHandler">前进</button>
+		<button @click="backHandler">后退</button>
+		<button @click="goHandler">go</button>
+		<button @click="pushHandler">push</button>
+		<button @click="replaceHandler">replace</button>
+	</section>
+	<transition mode="out-in" :name="pageTransName">
+		<router-view class="body"></router-view>
+	</transition>
+	<router-view name="slider"></router-view>
+	</div>
 </template>
 
 <script>
